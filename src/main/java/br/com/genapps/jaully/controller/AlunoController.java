@@ -19,7 +19,7 @@ public class AlunoController {
     }
 
     @PostMapping("/add")
-    public Aluno addAluno(@RequestBody Aluno aluno) {
+    public Aluno addAluno (@RequestBody Aluno aluno) {
         return alunoRepository.save(aluno);
     }
 
