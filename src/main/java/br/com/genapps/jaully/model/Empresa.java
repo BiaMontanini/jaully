@@ -11,18 +11,21 @@ import javax.persistence.*;
 @Data
 @Entity
 
-public class Aluno {
+public class Empresa {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
     @Column(length = 100, nullable = false)
-    private String nome;
+    private String nomeDaEmpresa;
 
     @Column(length = 100, nullable = false)
-    private String sobrenome;
+    private String nomeFantasia;
 
-    @Column(length = 100, nullable = false)
-    private String email;
+    @Column(length = 15, nullable = false)
+    private String cep;
+
+    @Column(length = 400, nullable = false)
+    private String endereco;
 
 }
